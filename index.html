@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Peso ideal</title>
+  </head>
+  <body>
+    <div><h1>IMC</h1></div> <br>
+    <div class="txt">
+      <p>
+        IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela
+        Organização Mundial de Saúde <br />
+        para calcular o peso ideal de cada pessoa.
+      </p>
+      <p>
+        O IMC é uma fórmula utilizada por vários profissionais de saúde, incluindo médicos, nutricionistas, profissionais de educação <br> física e enfermeiros, para saber, de uma forma rápida, se a pessoa está com o peso adequado ou se precisa ganhar ou perder peso.
+       </p>
+      <p>
+        O índice é calculado da seguinte maneira: divide-se o peso do paciente
+        pela sua altura elevada ao quadrado. <br />
+    
+        <h3>Qual o IMC normal? </h3>
+        O IMC é considerado normal quando o valor está entre 18,5 e 24,9 kg/m².
+      </p>
+      <p>
+        <h3>Quer descobrir seu IMC?</h3> 
+        Insira seu peso e sua altura nos campos abaixo e
+        compare com os índices da tabela.
+      </p>
+    </div>
+
+  <div class="divAltura">
+    <div>
+      <label>Altura:</label> 
+      <input id="altura" class="my-input" type="number" name="altura"  placeholder="ex: 1,70"/>
+    </div>
+    <div>
+      <label>Peso:</label> 
+      <input id="peso" class="my-input" type="number" name="peso"  placeholder="ex: 69,7"/>  <br /> 
+    </div>
+    <button onclick="calcIMC()">Calcular</button> 
+  </div>
+  <br>  
+  <div class="divAltura">
+    <input readonly type="text" name="seuimc" id="res" placeholder="Seu IMC:">
+  </div>
+    <br>
+   
+    <div id="tab">
+        <h3>Tabela de IMC</h3>
+            A tabela a seguir indica a classificação dos valores de IMC, de acordo com a Organização Mundial da Saúde: <br>
+        <br> 
+        <table>
+            <tr class="linha"> 
+                <td>IMC (kg/m²)</td>
+                <td>Classificação</td>
+            </tr>
+
+            <tr>
+                <td>Menor que 18,5</td>
+                <td>Baixo peso</td>
+            </tr>
+            <tr>
+                <td class="l1">De 18,5 a 24,9</td>
+                <td class="l1">Peso normal</td>
+            </tr>
+            <tr>
+                <td>De 25 a 29,9</td>
+                <td>Sobrepeso</td>
+            </tr>
+            <tr>
+                <td class="l1">De 30 a 34,9</td>
+                <td class="l1">Obersidade grau |</td>
+            </tr>
+            <tr>
+                <td>De 35 a 39,9</td>
+                <td>Obesidade grau ||</td>
+            </tr>
+            <tr>
+                <td class="l1">Igual ou maior que 40</td>
+                <td class="l1">Obesidade grau |||</td>
+            </tr>
+        </table>
+        <br>
+       <h3> Estou fora do IMC ideal, o que devo fazer?</h3>
+       <p>Caso você esteja com o peso muito baixo é importante um plano alimentar adequado para que ele aumente de maneira saudável. <br> Quando se está abaixo do peso ideal deve-se aumentar o consumo de alimentos ricos em nutrientes e não necessariamente apenas <br> calorias, para que o corpo tenha o necessário para se proteger de doenças.</p>
+       <p>Por outro lado, caso você precise perder peso um plano alimentar com restrição calórica é importante. Além disso praticar exercícios <br>físicos com regularidade acelera o seu metabolismo e favorece a perda de peso, melhorando a sua saúde!</p>
+       <h3>Por que devemos ter uma alimentação saudável?</h3>
+       <p>Uma alimentação saudável é aquela que garante o fornecimento de todos os nutrientes necessários para o funcionamento do nosso corpo. <br>Investir em alimentos pouco processados e reduzir o consumo de gordurras, sal e açúcar são algumas das medidas que podem melhorar <br> a sua alimentação. Uma alimentação saudável está relacionada com diversos benefícios para nosso organismo, como a melhora na imunidade,<br> no humor
+        e na qualidade do sono, o aumento da disposição, a regulação do nosso intestino e a manutenção do peso.
+        
+        </p>
+       <p>Estar em boa forma, praticar exercícios físicos com regularidade e manter uma alimentação saudável são os segredos para manter um <br>índice de massa corpórea adequado. </p>
+    </div>
+    <div class="box-img">
+        <img  class="fit" src="marmita.jpg" alt="Três marmitas saudáveis"> <br>
+        <img class="fit" src="carne.jpg" alt="Carne e legumes">
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <br />
+  <br>
+  <br>
+  <br>
+  <footer>Feito por Mi ♥</footer>
+</html>
